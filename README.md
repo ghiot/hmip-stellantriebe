@@ -33,14 +33,20 @@ Thermostaten automatisch an. Dafür erweitert die Integration die Eigenschaft `h
 der HomematicIP-Heizgruppen zur Laufzeit; Gruppen ohne Schaltausgang behalten das
 Original-Verhalten, und beim Entfernen der Integration wird das Original wiederhergestellt.
 
-## Installation (HACS)
+## Installation (Marketplace, ab Home Assistant 2026.11)
 
-1. HACS → ⋮ → **Benutzerdefinierte Repositories** →
+1. Einstellungen → **Marketplace** → **Add from link** →
    `https://github.com/ghiot/hmip-stellantriebe`, Typ **Integration**.
-2. „HmIP Stellantriebe“ herunterladen, Home Assistant neu starten.
+   Dafür muss im Marketplace ein GitHub-Konto verbunden sein; nur dann prüft der
+   Marketplace dieses Repository auch auf neue Versionen.
+2. „HmIP Stellantriebe“ installieren, Home Assistant neu starten.
 3. Einstellungen → Geräte & Dienste → **Integration hinzufügen** → „HmIP Stellantriebe“.
 
 Voraussetzung: eingerichtete Integration HomematicIP Cloud.
+
+Bis Home Assistant 2026.10 geht Schritt 1 über HACS → ⋮ → **Benutzerdefinierte
+Repositories** (gleiche URL, Typ **Integration**). Eine HACS-Installation übernimmt der
+Marketplace beim Update auf 2026.11 automatisch.
 
 ## Hinweis
 
